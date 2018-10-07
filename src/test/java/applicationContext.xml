@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:raecache="http://javaovo.github.io/schema/raecache"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xsi:schemaLocation="http://javaovo.github.io/schema/raecache http://javaovo.github.io/schema/raecache.xsd
+	 http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<raecache:redis id="redisProvider" host="localhost:6379" database="1" ns="io.github.javaovo" maxTotal="8" password="123456"/>
+
+    <raecache:ehcache id="ehcacheProvider" />
+
+    <raecache:channel id="cacheChannel" L1="ehcacheProvider" L2="redisProvider" />
+
+    <bean id="cacheManager" class="org.springframework.cache.support.SimpleCacheManager" lazy-init="true">
+        <property name="caches">
+            <set>
+                <ref bean="cacheChannel"/>
+            </set>
+        </property>
+    </bean>
+
+    <cache:annotation-driven cache-manager="cacheManager"/>
+
+</beans>
