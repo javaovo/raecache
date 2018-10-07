@@ -16,6 +16,11 @@
  */
 package io.github.javaovo.cache;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:43:12
+ * @Since: 1.0
+ */
 public class CacheException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;

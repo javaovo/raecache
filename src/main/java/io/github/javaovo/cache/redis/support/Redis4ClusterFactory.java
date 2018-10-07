@@ -28,6 +28,11 @@ import io.github.javaovo.cache.redis.client.ClusterRedisClient;
 
 import io.lettuce.core.RedisURI;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:41:28
+ * @Since: 1.0
+ */
 public class Redis4ClusterFactory implements Redis4ClientFactory<ClusterRedisClient> {
 
 	private static final Logger log = LoggerFactory.getLogger(Redis4ClusterFactory.class);
@@ -98,12 +103,6 @@ public class Redis4ClusterFactory implements Redis4ClientFactory<ClusterRedisCli
 		this.config = config;
 	}
 
-	/**
-	 * Closes this stream and releases any system resources associated with it. If
-	 * the stream is already closed then invoking this method has no effect.
-	 *
-	 * @throws IOException if an I/O error occurs
-	 */
 	@Override
 	public void close() throws IOException {
 		redisClient.close();

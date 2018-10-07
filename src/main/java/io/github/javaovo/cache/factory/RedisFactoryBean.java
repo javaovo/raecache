@@ -26,6 +26,11 @@ import org.springframework.beans.factory.InitializingBean;
 import io.github.javaovo.cache.CacheProvider;
 import io.github.javaovo.cache.redis.RedisCacheProvider;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:39:50
+ * @Since: 1.0
+ */
 public class RedisFactoryBean implements FactoryBean<CacheProvider>, InitializingBean, DisposableBean {
 
 	private RedisCacheProvider redisCacheProvider;

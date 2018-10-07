@@ -27,6 +27,11 @@ import org.springframework.beans.factory.InitializingBean;
 import io.github.javaovo.cache.CacheProvider;
 import io.github.javaovo.cache.ehcache.EhCacheProvider;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:39:35
+ * @Since: 1.0
+ */
 public class EhCacheFactoryBean implements FactoryBean<CacheProvider>, InitializingBean, DisposableBean {
 
 	private EhCacheProvider ehCacheProvider;

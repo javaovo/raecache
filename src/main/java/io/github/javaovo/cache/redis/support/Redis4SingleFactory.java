@@ -28,6 +28,11 @@ import io.github.javaovo.cache.redis.client.RaeRedisClient;
 import io.github.javaovo.cache.redis.client.SingleRedisClient;
 import io.lettuce.core.RedisURI;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:41:59
+ * @Since: 1.0
+ */
 public class Redis4SingleFactory implements Redis4ClientFactory<RaeRedisClient<String, Object>> {
 
 	private static final Logger log = LoggerFactory.getLogger(Redis4SingleFactory.class);
@@ -76,12 +81,6 @@ public class Redis4SingleFactory implements Redis4ClientFactory<RaeRedisClient<S
 		return node;
 	}
 
-	/**
-	 * Closes this stream and releases any system resources associated with it. If
-	 * the stream is already closed then invoking this method has no effect.
-	 *
-	 * @throws IOException if an I/O error occurs
-	 */
 	@Override
 	public void close() throws IOException {
 		redisClient.close();

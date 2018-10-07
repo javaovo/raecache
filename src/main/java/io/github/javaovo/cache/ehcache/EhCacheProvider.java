@@ -29,6 +29,11 @@ import io.github.javaovo.cache.CacheProvider;
 import io.github.javaovo.cache.util.MapUtils;
 import net.sf.ehcache.CacheManager;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:39:12
+ * @Since: 1.0
+ */
 public class EhCacheProvider extends AbstractCacheProvider {
 
 	private final static Logger log = LoggerFactory.getLogger(EhCacheProvider.class);
@@ -52,16 +57,6 @@ public class EhCacheProvider extends AbstractCacheProvider {
 		return " ";
 	}
 
-	/**
-	 * Builds a Cache. Even though this method provides properties, they are not
-	 * used. Properties for EHCache are specified in the ehcache.xml file.
-	 * Configuration will be read from ehcache.xml for a cache declaration where the
-	 * name attribute matches the name parameter in this builder.
-	 *
-	 * @param name the name of the cache. Must match a cache configured in
-	 *             ehcache.xml
-	 * @throws CacheException inter alia, if a cache of the same name already exists
-	 */
 	@Override
 	public Cache getCache() throws CacheException {
 		if (ehcache == null) {
@@ -110,12 +105,6 @@ public class EhCacheProvider extends AbstractCacheProvider {
 		return getCache();
 	}
 
-	/**
-	 * Callback to perform any necessary initialization of the underlying cache
-	 * implementation during SessionFactory construction.
-	 *
-	 * @param props current configuration settings.
-	 */
 	@Override
 	public void init(Map<String, Object> map) throws CacheException {
 		if (manager != null) {
@@ -136,10 +125,6 @@ public class EhCacheProvider extends AbstractCacheProvider {
 		}
 	}
 
-	/**
-	 * Callback to perform any necessary cleanup of the underlying cache
-	 * implementation.
-	 */
 	@Override
 	public void destory() {
 		if (manager != null) {

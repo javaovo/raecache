@@ -18,12 +18,17 @@ package io.github.javaovo.cache.redis.support;
 
 import java.io.IOException;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:40:52
+ * @Since: 1.0
+ */
 public class Redis4ClientFactoryAdapter {
 
 	private Redis4ClientFactory<?> redis4ClientFactory;
 
 	private Redis4ClientConfig config;
-	private Redis2Policy policy = Redis2Policy.single; // 缓存策略，single:单机,sentinel:哨兵,cluster:集群
+	private Redis2Policy policy = Redis2Policy.single; // single,sentinel,cluster
 
 	private String namepsace;
 
@@ -266,12 +271,12 @@ public class Redis4ClientFactoryAdapter {
 	}
 
 	/**
-	 * redis使用策略
+	 * redis policy
 	 */
 	public enum Redis2Policy {
-		single, // 单机
-		sentinel, // 哨兵
-		cluster;// 集群
+		single, //
+		sentinel, //
+		cluster;//
 
 		Redis2Policy() {
 		}

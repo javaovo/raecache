@@ -23,6 +23,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cache.support.AbstractValueAdaptingCache;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:43:29
+ * @Since: 1.0
+ */
 public class RaeCacheChannel extends AbstractValueAdaptingCache implements Cache {
 
 	private final Logger logger = LoggerFactory.getLogger(RaeCacheChannel.class);

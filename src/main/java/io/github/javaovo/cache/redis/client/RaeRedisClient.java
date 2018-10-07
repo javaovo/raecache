@@ -31,6 +31,11 @@ import io.lettuce.core.api.sync.RedisSortedSetCommands;
 import io.lettuce.core.api.sync.RedisStringCommands;
 import io.lettuce.core.api.sync.RedisTransactionalCommands;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:44:39
+ * @Since: 1.0
+ */
 public interface RaeRedisClient<K, V> extends RedisHashCommands<K, V>, RedisKeyCommands<K, V>, RedisStringCommands<K, V>, RedisListCommands<K, V>, RedisSetCommands<K, V>,
 		RedisSortedSetCommands<K, V>, RedisScriptingCommands<K, V>, RedisServerCommands<K, V>, RedisHLLCommands<K, V>, BaseRedisCommands<K, V>,
 		RedisTransactionalCommands<K, V>, RedisGeoCommands<K, V>, Closeable {

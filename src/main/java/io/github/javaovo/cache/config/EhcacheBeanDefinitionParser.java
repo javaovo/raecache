@@ -24,6 +24,11 @@ import org.w3c.dom.Element;
 
 import io.github.javaovo.cache.factory.EhCacheFactoryBean;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:38:08
+ * @Since: 1.0
+ */
 public class EhcacheBeanDefinitionParser extends AbstractBeanDefinitionParser {
 
 	@Override

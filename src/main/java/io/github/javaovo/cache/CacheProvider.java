@@ -19,6 +19,11 @@ package io.github.javaovo.cache;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:43:22
+ * @Since: 1.0
+ */
 public interface CacheProvider {
 
 	public String name();

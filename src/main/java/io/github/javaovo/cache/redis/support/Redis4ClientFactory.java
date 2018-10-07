@@ -20,6 +20,11 @@ import java.io.Closeable;
 
 import io.github.javaovo.cache.redis.client.RaeRedisClient;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:40:45
+ * @Since: 1.0
+ */
 public interface Redis4ClientFactory<C extends RaeRedisClient<String, Object>> extends Closeable {
 
 	void build();

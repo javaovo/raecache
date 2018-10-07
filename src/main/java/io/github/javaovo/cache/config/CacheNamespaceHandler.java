@@ -18,6 +18,11 @@ package io.github.javaovo.cache.config;
 
 import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:37:57
+ * @Since: 1.0
+ */
 class CacheNamespaceHandler extends NamespaceHandlerSupport {
 
 	/*

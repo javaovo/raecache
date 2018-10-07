@@ -28,6 +28,11 @@ import org.springframework.context.ApplicationContextAware;
 import io.github.javaovo.cache.CacheProvider;
 import io.github.javaovo.cache.RaeCacheChannel;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:39:42
+ * @Since: 1.0
+ */
 public class RaeCacheFactoryBean implements FactoryBean<RaeCacheChannel>, InitializingBean, DisposableBean, ApplicationContextAware {
 
 	private static final Logger log = LoggerFactory.getLogger(RaeCacheFactoryBean.class);

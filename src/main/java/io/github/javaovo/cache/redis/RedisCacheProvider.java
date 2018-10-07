@@ -32,6 +32,11 @@ import io.github.javaovo.cache.redis.support.Redis4ClientFactoryAdapter;
 import io.github.javaovo.cache.redis.support.Redis4ClientFactoryAdapter.Redis2Policy;
 import io.github.javaovo.cache.util.MapUtils;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:40:32
+ * @Since: 1.0
+ */
 public class RedisCacheProvider extends AbstractCacheProvider {
 	private final Logger logger = LoggerFactory.getLogger(RedisCacheProvider.class);
 

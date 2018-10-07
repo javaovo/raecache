@@ -18,6 +18,11 @@ package io.github.javaovo.cache.redis.support;
 
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:40:40
+ * @Since: 1.0
+ */
 public class Redis4ClientConfig extends GenericObjectPoolConfig {
 
 	private String host;

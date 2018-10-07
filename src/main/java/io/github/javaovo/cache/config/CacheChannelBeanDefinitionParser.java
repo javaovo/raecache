@@ -24,6 +24,11 @@ import org.w3c.dom.Element;
 
 import io.github.javaovo.cache.factory.RaeCacheFactoryBean;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:37:44
+ * @Since: 1.0
+ */
 public class CacheChannelBeanDefinitionParser extends AbstractBeanDefinitionParser {
 
 	@Override
@@ -40,7 +45,6 @@ public class CacheChannelBeanDefinitionParser extends AbstractBeanDefinitionPars
 	}
 
 	private AbstractBeanDefinition getSourcedBeanDefinition(BeanDefinitionBuilder builder, Element source, ParserContext context) {
-
 		AbstractBeanDefinition definition = builder.getBeanDefinition();
 		definition.setSource(context.extractSource(source));
 		return definition;

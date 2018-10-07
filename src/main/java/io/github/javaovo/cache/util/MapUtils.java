@@ -25,6 +25,11 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.ResourceBundle;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:42:19
+ * @Since: 1.0
+ */
 public class MapUtils {
 
 	private MapUtils() {
