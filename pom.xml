@@ -23,7 +23,7 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<maven.test.skip>true</maven.test.skip>
-		<spring.version>4.3.10.RELEASE</spring.version>
+		<spring.version>4.3.18.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
 	</properties>
 
