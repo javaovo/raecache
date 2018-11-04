@@ -70,6 +70,11 @@ import io.lettuce.core.protocol.CommandType;
 import io.lettuce.core.protocol.ProtocolKeyword;
 import io.lettuce.core.support.ConnectionPoolSupport;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:44:45
+ * @Since: 1.0
+ */
 public class SentinelRedisClient implements RaeRedisClient<String, Object> {
 
 	private GenericObjectPool<StatefulRedisConnection<String, Object>> pool;

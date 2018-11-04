@@ -73,12 +73,6 @@ public class Redis4SentinelFactory implements Redis4ClientFactory<SentinelRedisC
 		this.config = config;
 	}
 
-	/**
-	 * Closes this stream and releases any system resources associated with it. If
-	 * the stream is already closed then invoking this method has no effect.
-	 *
-	 * @throws IOException if an I/O error occurs
-	 */
 	@Override
 	public void close() throws IOException {
 		redisClient.close();

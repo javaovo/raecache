@@ -26,6 +26,11 @@ import java.nio.charset.Charset;
 
 import io.lettuce.core.codec.RedisCodec;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:42:13
+ * @Since: 1.0
+ */
 public class SerializedObjectCodec implements RedisCodec<String, Object> {
 
 	private Charset charset = Charset.forName("UTF-8");

@@ -29,10 +29,9 @@ import io.lettuce.core.codec.RedisCodec;
 import io.lettuce.core.internal.LettuceAssert;
 
 /**
- * A compressing/decompressing {@link RedisCodec} that wraps a typed {@link RedisCodec codec} and compresses values using GZIP
- * or Deflate. See {@link io.lettuce.core.codec.CompressionCodec.CompressionType} for supported compression types.
- *
- * @author Mark Paluch
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:41:53
+ * @Since: 1.0
  */
 public class Redis4CompressionCodec {
 	private static final int ZLIB_MAGIC_1 = 0x78;

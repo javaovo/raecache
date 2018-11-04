@@ -16,6 +16,11 @@
  */
 package io.github.javaovo.cache;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:43:18
+ * @Since: 1.0
+ */
 public interface CacheExpiredListener {
 
 	public void notifyElementExpired(Object key);

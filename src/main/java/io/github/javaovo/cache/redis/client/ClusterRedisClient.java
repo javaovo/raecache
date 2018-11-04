@@ -75,6 +75,11 @@ import io.lettuce.core.protocol.CommandType;
 import io.lettuce.core.protocol.ProtocolKeyword;
 import io.lettuce.core.support.ConnectionPoolSupport;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:44:26
+ * @Since: 1.0
+ */
 public class ClusterRedisClient implements RaeRedisClient<String, Object>, RedisClusterCommands<String, Object> {
 
 	private GenericObjectPool<StatefulRedisClusterConnection<String, Object>> pool;

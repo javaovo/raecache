@@ -25,6 +25,11 @@ import io.github.javaovo.cache.Cache;
 import io.github.javaovo.cache.CacheException;
 import io.github.javaovo.cache.redis.client.RaeRedisClient;
 
+/**
+ * @Author: javaovo@163.com
+ * @Date: 2018-10-07 21:40:19
+ * @Since: 1.0
+ */
 public class RedisCache implements Cache {
 
 	private final static Logger log = LoggerFactory.getLogger(RedisCache.class);
@@ -37,12 +42,6 @@ public class RedisCache implements Cache {
 		this.client = client;
 	}
 
-	/**
-	 * 在region里增加一个可选的层级,作为命名空间,使结构更加清晰 同时满足小型应用,多个J2Cache共享一个redis database的场景
-	 *
-	 * @param region
-	 * @return
-	 */
 	public String getKeyName(Object key) {
 		if (key != null && key.toString().startsWith(namespace)) {
 			return "" + key;
